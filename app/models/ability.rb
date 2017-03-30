@@ -3,7 +3,6 @@ class Ability
 
   def initialize user
     user ||= User.new
-    # return can :manage, :all if user.admin?
 
     case user.role
     when "admin"
